@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greeter Demo</title>
+</head>
+<body>
+  
+  <div class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-md">
+      <h2 class="mb-4 text-lg font-bold text-center">Click the Button Below</h2>
+      <div id="my-component"></div>
+    </div>
+  </div>
+
+  <script src="../dist/compiled-greeter-component.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof Greeter !== 'undefined') {
+        Greeter.init('#my-component', { message: 'Hello from index.html!' });
+      } else {
+        console.error('Greeter is not defined. Check the script path or export.');
+      }
+    });
+  </script>
+</body>
+</html>

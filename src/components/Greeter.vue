@@ -11,7 +11,7 @@ import { defineProps } from 'vue'
 const props = defineProps({
   message: {
     type: String,
-    default: 'Hello from default!',
+    default: 'Hello from default greeter-component/src/components/Greeter.vue',
     required: true
   }
 })

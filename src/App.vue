@@ -7,7 +7,7 @@ import Greeter from './components/Greeter.vue'
     <h1 class="text-[32px] font-bold mb-[50px]">Vue.js Component for Third-Party
       Integration</h1>
     <div class="card">
-      <Greeter message="hello component success clicked" />
+      <Greeter message="hello from App.vue" />
     </div>
   </div>
 </template>
